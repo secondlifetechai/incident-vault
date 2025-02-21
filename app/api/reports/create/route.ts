@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
-import { ReportType } from "@prisma/client";
 
 export async function POST(request: Request) {
   try {
@@ -20,7 +19,7 @@ export async function POST(request: Request) {
     const report = await prisma.report.create({
       data: {
         reportId,
-        type: type as ReportType,
+        type,
         title,
         description,
         reportType: specificType,
