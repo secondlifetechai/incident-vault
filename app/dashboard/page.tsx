@@ -4,6 +4,7 @@ import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import { Report, ReportStatus, ReportType } from "@prisma/client";
 import { signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 export default function Dashboard() {
   const { data: session } = useSession();
@@ -11,10 +12,15 @@ export default function Dashboard() {
   const [filter, setFilter] = useState<ReportStatus | "ALL">("ALL");
   const [typeFilter, setTypeFilter] = useState<ReportType | "ALL">("ALL");
   const [isLoading, setIsLoading] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
     fetchReports();
   }, []);
+
+  if (!session) {
+    router.push('/signin')
+  }
 
   const fetchReports = async () => {
     setIsLoading(true);

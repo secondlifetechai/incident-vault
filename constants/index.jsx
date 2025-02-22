@@ -6,112 +6,112 @@ import { PlugZap } from "lucide-react";
 import { GlobeLock } from "lucide-react";
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Features", href: "/#features" },
+  { label: "Workflow", href: "/#workflow" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Testimonials", href: "/#testimonials" },
   { label: "Send Report", href: "/send-report" },
   { label: "Track Report", href: "/track-report" },
 ];
 
 export const testimonials = [
   {
-    user: "John Doe",
-    company: "Stellar Solutions",
+    user: "Sarah Thompson",
+    company: "HR Manager",
     image: '/profile-pictures/user1.jpg',
-    text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
+    text: "This platform has completely transformed how we handle incident reports. The anonymity feature ensures employees feel safe reporting issues.",
   },
   {
-    user: "Jane Smith",
-    company: "Blue Horizon Technologies",
+    user: "James Carter",
+    company: "Security Analyst",
     image: '/profile-pictures/user2.jpg',
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
+    text: "The AI-powered reporting is a game changer! Uploading a photo and getting an instant report saves so much time.",
   },
   {
-    user: "David Johnson",
-    company: "Quantum Innovations",
+    user: "Lisa Rodriguez",
+    company: "Community Organizer",
     image: '/profile-pictures/user3.jpg',
-    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
+    text: "Finally, a tool that allows people to report incidents without fear. It's simple, effective, and truly makes a difference.",
   },
   {
-    user: "Ronee Brown",
-    company: "Fusion Dynamics",
+    user: "Michael Lee",
+    company: "Corporate Compliance Officer",
     image: '/profile-pictures/user4.jpg',
-    text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
+    text: "Risk analysis and priority detection have helped our organization take immediate action on critical incidents. Highly recommended!",
   },
   {
-    user: "Michael Wilson",
-    company: "Visionary Creations",
+    user: "Emily Watson",
+    company: "NGO Director",
     image: '/profile-pictures/user5.jpg',
-    text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
+    text: "We needed a secure and anonymous way to receive reports, and this app delivers perfectly. It’s an essential tool for our work.",
   },
   {
-    user: "Emily Davis",
-    company: "Synergy Systems",
+    user: "David Miller",
+    company: "Law Enforcement Consultant",
     image: '/profile-pictures/user6.jpg',
-    text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
+    text: "This app bridges the gap between the public and authorities, ensuring important incidents don’t go unnoticed. Brilliant innovation!",
   },
 ];
 
 export const features = [
   {
     icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
+    text: "Effortless Incident Reporting",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "Upload a photo of the incident, and our advanced AI instantly identifies key details, filling out the report form for you. No hassle, no delays—just instant results.",
   },
   {
     icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
+    text: "Total Anonymity",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "Your identity remains completely hidden. We guarantee that no one can trace the report back to you.",
   },
   {
     icon: <ShieldHalf />,
-    text: "Built-in Templates",
+    text: "Smart Event Recognition",
     description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
+      "Our app can recognize the type of incident from the uploaded photo and categorize it for quicker responses.",
   },
   {
     icon: <BatteryCharging />,
-    text: "Real-Time Preview",
+    text: "Intelligent Risk Analysis",
     description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+      "Admins receive detailed reports with priority levels and risk ratings, ensuring swift action for critical issues.",
   },
   {
     icon: <PlugZap />,
-    text: "Collaboration Tools",
+    text: "Save Time & Stay Safe",
     description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+      "AI handles the reporting for you. Your privacy is our top priority.",
   },
   {
     icon: <GlobeLock />,
-    text: "Analytics Dashboard",
+    text: "Drive Change & Feel Empowered",
     description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
+      "Ensure incidents get the attention they deserve. Report freely without fear or exposure.",
   },
 ];
 
 export const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "Capture and Upload",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Take a photo of the incident or event and upload it to the app.",
   },
   {
-    title: "Review code without worry",
+    title: "Automated Form Filling",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Let our smart system identify the details and fill out the report for you.",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "Anonymity Ensured",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Your identity is encrypted and kept safe. Only the report reaches the admin.",
   },
   {
-    title: "Share work in minutes",
+    title: "Admin Action",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "The admin reviews the report, prioritizes it, and takes necessary action",
   },
 ];
 
@@ -120,54 +120,50 @@ export const pricingOptions = [
     title: "Free",
     price: "$0",
     features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
+      "AI-powered incident detection",
+      "Basic incident reporting",
+      "Anonymous reporting",
+      "Basic risk analysis",
+      "Limited admin access",
     ],
   },
   {
     title: "Pro",
-    price: "$10",
+    price: "$15",
     features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
+      "All Free features",
+      "Priority risk assessment",
+      "Advanced incident categorization",
+      "24/7 customer support",
+      "Enhanced admin tools",
     ],
   },
   {
     title: "Enterprise",
-    price: "$200",
+    price: "$99",
     features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
+      "All Pro features",
+      "Custom risk scoring",
+      "Dedicated admin panel",
+      "API integration for organizations",
+      "Unlimited reporting and storage",
     ],
   },
 ];
 
 export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
+  { href: "/send-report", text: "Send Report" },
+  { href: "/track-report", text: "Track Report" },
 ];
 
 export const platformLinks = [
-  { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
+  { href: "/#features", text: "Features" },
+  { href: "/#workflow", text: "Work Flow" },
+  { href: "/#pricing", text: "Pricing" },
+  { href: "/#testimonials", text: "Testimonials" },
 ];
 
 export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
+  { href: "/auth/signin", text: "Sign In" },
+  { href: "/auth/signup", text: "Sign Up" },
 ];

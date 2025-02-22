@@ -3,16 +3,16 @@ import { checklistItems } from "../constants";
 
 const Workflow = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20" id="workflow">
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
         
         <span className="bg-gradient-to-r from-yellow-700 via-white to-blue-800 text-transparent bg-clip-text">
-        Accelerate your{" "}coding workflow.
+          How It {" "}Works.
         </span>
       </h2>
       <div className="flex flex-wrap justify-center">
-        <div className="p-2 w-full lg:w-1/2">
-          <img src={'/code.jpg'} alt="Coding" />
+        <div className="p-2 pt-24 w-full lg:w-1/2">
+          <img src={'/banner.png'} alt="Banner" />
         </div>
         <div className="pt-12 w-full lg:w-1/2">
           {checklistItems.map((item, index) => (

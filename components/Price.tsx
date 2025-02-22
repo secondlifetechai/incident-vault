@@ -1,9 +1,10 @@
 import { CheckCircle2 } from "lucide-react";
 import { pricingOptions } from "../constants";
+import Link from "next/link";
 
 const Pricing = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20" id="pricing">
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide">
         Pricing
       </h2>
@@ -31,12 +32,10 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-              <a
-                href="#"
-                className="inline-flex justify-center items-center text-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-blue-900 border border-blue-900 rounded-lg transition duration-200"
+              <Link href="/send-report" className="inline-flex justify-center items-center text-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-blue-900 border border-blue-900 rounded-lg transition duration-200"
               >
-                Subscribe
-              </a>
+                Start for Free!
+              </Link>
             </div>
           </div>
         ))}
